@@ -1,0 +1,70 @@
+# ── トピックを複数定義できる ────────────────────────────────
+# Claude が全記事から重要度で4件を自動選択します
+
+total_articles: 4   # メールに載せる合計件数（グローバル・日本それぞれ）
+
+topics:
+  - name: "AI/LLM"
+    rss_global:
+      - "https://news.google.com/rss/search?q=artificial+intelligence+LLM&hl=en-US&gl=US&ceid=US:en"
+      - "https://techcrunch.com/category/artificial-intelligence/feed/"
+      - "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml"
+      - "https://venturebeat.com/category/ai/feed/"
+    rss_japan:
+      - "https://news.google.com/rss/search?q=%E7%94%9F%E6%88%90AI+OR+LLM+OR+%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD&hl=ja&gl=JP&ceid=JP:ja"
+      - "https://www.itmedia.co.jp/news/subtop/aiplus/index.rdf"
+    hackernews_keywords:
+      - "llm"
+      - "gpt"
+      - "claude"
+      - "gemini"
+      - "openai"
+      - "anthropic"
+      - "deepseek"
+      - "mistral"
+      - "ollama"
+      - "language model"
+
+  - name: "LLM inference serving"
+    rss_global:
+      - "https://news.google.com/rss/search?q=quantum+computing&hl=en-US&gl=US&ceid=US:en"
+    rss_japan:
+      - "https://news.google.com/rss/search?q=%E9%87%8F%E5%AD%90%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF&hl=ja&gl=JP&ceid=JP:ja"
+    hackernews_keywords:
+      - "vllm"
+      - "sglang"
+      - "inference serving"
+      - "speculative decoding"
+      - "continuous batching"
+      - "prefill decode"
+      - "rag serving"
+      - "dynamic scheduling"
+
+  # 追加例（コメントアウトを外すと有効になります）
+  - name: "Agentic AI"
+    rss_global:
+      - "https://news.google.com/rss/search?q=startup+funding&hl=en-US&gl=US&ceid=US:en"
+    rss_japan:
+      - "https://news.google.com/rss/search?q=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94&hl=ja&gl=JP&ceid=JP:ja"
+    hackernews_keywords:
+      - "multi-agent"
+      - "ai agent"
+      - "langgraph"
+      - "autogen"
+      - "crewai"
+      - "agentic rag"
+      - "agent workflow"
+
+  - name: "HPC + AI"
+    rss_global:
+      - "https://news.google.com/rss/search?q=startup+funding&hl=en-US&gl=US&ceid=US:en"
+    rss_japan:
+      - "https://news.google.com/rss/search?q=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94&hl=ja&gl=JP&ceid=JP:ja"
+    hackernews_keywords:
+      - "hpc"
+      - "supercomputer"
+      - "slurm"
+      - "malleable jobs"
+      - "parallel computing"
+      - "ai for science"
+      - "gpu cluster"
